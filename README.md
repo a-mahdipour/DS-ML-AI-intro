@@ -5,9 +5,9 @@
 
 ## 1. Data Science vs. Machine Learning 
 
-Comparison between ML and DS [1](Fig1)
+> Comparison between ML and DS [1](Fig1)
 [1](https://www.guru99.com)
 Fig1 ![alt text](fig1.jpeg)
 
 
-> datascience/machinelearning
+ 
