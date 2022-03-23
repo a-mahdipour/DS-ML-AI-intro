@@ -1,4 +1,5 @@
-# Notes on Machine-Learning and Artificial Intelegence (as well as Data-science)
+# Notes on Machine-Learning and Artificial Intelegence 
+(as well as Data-science)
 
 ## **Some important topics/challenges/techniques/modification on ML and AI systems are suggested/described in bellow.**
 
