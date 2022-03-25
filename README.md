@@ -1,7 +1,7 @@
-# Notes on Machine-Learning, Artificial Intelegence and Data Science
+# Notes on Machine-Learning (ML), Artificial Intelegence (AI) and Data Science (DS)
 
 
-## *Some important topics/challenges/techniques/modification on ML and AI systems are suggested/described in bellow.*
+## *Some important topics, challenges, techniques, improvemnents on ML and AI systems and therei correlations with DS are represented in bellow.*
 
 -----
 
@@ -13,7 +13,7 @@ www.guru99.com
 
 
 ```diff
-+ Green
++ library(tidyverse)
 - Red
 ! Orange
 @@ Pink @@
