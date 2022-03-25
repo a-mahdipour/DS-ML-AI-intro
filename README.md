@@ -7,8 +7,8 @@
 ## 1. Data Science vs. Machine Learning [1](Fig1)
 
  
-> https://www.guru99.com
-Fig1![alt text](fig1.jpeg)
+> www.guru99.com
+![alt text](fig1.jpeg)
 
 
  
