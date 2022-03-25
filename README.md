@@ -12,6 +12,12 @@
 www.guru99.com
 
 
-
+```diff
++ Green
+- Red
+! Orange
+@@ Pink @@
+# Gray
+```
  
 
