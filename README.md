@@ -7,9 +7,10 @@
 
 ## 1. Data Science vs. Machine Learning 
 
+![alt text](fig1.jpeg)
  
 www.guru99.com
-![alt text](fig1.jpeg)
+
 
 
  
