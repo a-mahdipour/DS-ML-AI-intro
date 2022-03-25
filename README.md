@@ -1,4 +1,6 @@
-# Notes on Machine-Learning and Artificial Intelegence 
+# <span style="color:blue"> Notes on Machine-Learning, Artificial Intelegence and Data Science </span>
+
+
 (as well as Data-science)
 
 ## **Some important topics/challenges/techniques/modification on ML and AI systems are suggested/described in bellow.**
