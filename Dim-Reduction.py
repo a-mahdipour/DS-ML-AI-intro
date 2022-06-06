@@ -1,10 +1,11 @@
-
+import inline as inline
+import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
 from sklearn.datasets import load_iris, load_digits
-%matplotlib inline
+
 
 
 sns.set(style='white', context='notebook', rc={'figure.figsize':(14,10)})
