@@ -255,7 +255,7 @@ Some of the meta-algorithms used in ensemble methods are:
 - #stacking (stacked generalization): learns heterogeneous weak learners independently and combines the results via a meta-model which predicts based on the weaker models' predictions using the predictions from previous steps as its inputs.
 - #blending: very similar to stacking meta-model but instead of out-of-fold predictions as is used in stacking, uses a #validation set to train the next layer.
 
-![alt text](FIGs/fig11.jpg)
+![alt text](FIGs/fig12.jpg)
 towardsdatascience.com, medium.com
 
 ----
