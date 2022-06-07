@@ -228,7 +228,7 @@ One of the most important steps in #unsupervised #machinelearning algorithms is 
 - Projecting original data to the feature vector coordinates
 
 
-![alt text](FIGs/fig10.jpg)
+![alt text](FIGs/fig11.jpg)
 towardsdatascience.com
 
 Working with high-dimensional (multivariate) data tends to overfit in #machinelearning #ml models and thus dimensionality reduction approaches are implemented to modify data prior to modelling.
