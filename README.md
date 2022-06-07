@@ -36,7 +36,7 @@ Pay attention to the Model you are using, e.g. carefully observe weights for reg
 ## 6. Start with simple models
 Avoid to start with a complex machine learning models and try simple baseline models first. To improve your model to a more complex one, examine the contribution and necessity of each part of the complex model and exclude the redundant parts.
 
-![alt text](FIGs/fig3.jpg)
+![alt text](FIGs/Fig3.jpg)
 
 stats.stackexchange.com
 
@@ -44,14 +44,14 @@ stats.stackexchange.com
 ## 7.
 Be careful about the case study you are applying ML on. Before applying ML techniques makes sure if this is an appropriate tool by estimating cost, benefits, min viability of product, project risk, data privacy/bias/transparency and accuracy of AI and ML infused applications. In some case ML may only help to categorize across possible options but may need to be interpreted along with other perspectives and background info to be insightful.
 
-![alt text](FIGs/fig4.jpeg)
+![alt text](FIGs/fig4.jpg)
 coforge.com
 
 ----
 ## 8. Validation of the model
 Always perform a failure analysis and validate your model, specifically for frequent problems addressing the most frequent ones first and estimate the improvement level. Using this step try to efficiently modify your model such a way that level of effort is minimized. 
 
-![alt text](FIGs/fig5.jpeg)
+![alt text](FIGs/fig5.jpg)
 oreilly.com
 
 To evaluate how well a certain machine learning algorithm models the input data, diverse loss functions are used. Selecting the type of the loss function is crucial and can be generally classified into two major groups
@@ -124,7 +124,7 @@ SVM -as one of the most powerful modeling algorithm in machine learning- is usua
 
 For instance in medical data (e.g. genomics or other omics data), there will be a high risk of overfitting the data. In such cases we should improve data by decreasing the number of features, increasing regularization, changing the model architecture and so on. 
 
-![alt text](FIGs/fig6.jpeg)
+![alt text](FIGs/fig6.jpg)
 learnopencv.com
 
 ----
@@ -135,14 +135,14 @@ Among a varity of existing cloud computing platforms (web services) to perform #
 - Google Cloud, and
 - IBM Cloud.
 
-![alt text](FIGs/fig7.jpeg)
+![alt text](FIGs/fig7.jpg)
 dailyhostnews.com
 
 ----
 ## 12. Big data
 The field #bigdata study is a field of efficiently dealing with a large amount of data (may grow over time) that cannot be processed via traditional #dataprocessing techniques/softwares. Note that the higher observation in data, the more #accuracy and false discovery rate (#fdr) can be acheived using big data sets. #bigdata is at the intersection of #machinelearning, #artificialintelligence and #datascience and plays a crucial role. some associations between #bigdata and #machinelearning are presented in the enclosed fig. 
 
-![alt text](FIGs/fig8.jpeg)
+![alt text](FIGs/fig8.jpg)
 techtarget.com
 
 ----
@@ -208,7 +208,7 @@ Irreducible generalization error in #machinelearning comprises of two important 
 1) bias - is because of wrong assumptions (e.g. linear while is quadratic) and due to far differences between predicted and actual data. High bias is most likely associated with #underfitting the  training data.
 2) variance - is, however, correlated to high sensitivity of the ML model to small changes in the  training data. More precisely, when the model is well stablished on trained data while but not on test/validation datasets. Variance represents the level of dispersion on predicted from actual values in a dataset. High variance associates with overfitting and modeling random noise in the training data.
 
-![alt text](FIGs/fig10.jpeg)
+![alt text](FIGs/fig10.jpg)
 statlearning.com
 
 ----
@@ -228,7 +228,7 @@ One of the most important steps in #unsupervised #machinelearning algorithms is 
 - Projecting original data to the feature vector coordinates
 
 
-![alt text](FIGs/fig10.jpeg)
+![alt text](FIGs/fig10.jpg)
 towardsdatascience.com
 
 Working with high-dimensional (multivariate) data tends to overfit in #machinelearning #ml models and thus dimensionality reduction approaches are implemented to modify data prior to modelling.
@@ -242,7 +242,7 @@ some specific types of PCA are:
 - Kernel Principal Component Analysis (kPCA, applying kernel methods)
 - Non-negative matrix factorization (NMF 0r NNMF which decomposes data into factorize it into two matrices of non-negative elements)
 
-![alt text](FIGs/fig24.jpeg)
+![alt text](FIGs/fig24.jpg)
 ----
 ## 16. Ensemble learning
 #ensemble learning is a #supervisedlearning technique which combines/optimizes and #trains multiple (weaker) learning methods to solve more complex problems at higher #accuracy level for the purpose of #prediction and/or #classification and to improve the generalization errors.
@@ -255,7 +255,7 @@ Some of the meta-algorithms used in ensemble methods are:
 - #stacking (stacked generalization): learns heterogeneous weak learners independently and combines the results via a meta-model which predicts based on the weaker models' predictions using the predictions from previous steps as its inputs.
 - #blending: very similar to stacking meta-model but instead of out-of-fold predictions as is used in stacking, uses a #validation set to train the next layer.
 
-![alt text](FIGs/fig11.jpeg)
+![alt text](FIGs/fig11.jpg)
 towardsdatascience.com, medium.com
 
 ----
@@ -270,7 +270,7 @@ The main steps of semisupervised algorithm are:
 4- associate the inputs of labeled and unlabeled training data
 5- train the model once again as we did in Step 1, to decrease the error and improve the accuracy.
 
-![alt text](FIGs/fig13.jpeg)
+![alt text](FIGs/fig13.jpg)
 litslink.com
 
 
@@ -280,7 +280,7 @@ Alternative to the previous classifications, #machinelearning #algorithms, based
 1- #instancebased (#memorybased or #nonparametric) #learning: is trained based on (a subset of) #trainingdata and then is generalized to test data using a #similarity #measure to the training data. This approach dose not make explicit generalization but only compares to instances already seen during training.
 2- #modelbased (#parametric) learning: is a designed model on training data which can make #prediction on the test data. Majority of machine learning systems are of this type and used to make predictions on input data.
 
-![alt text](FIGs/fig16.jpeg)
+![alt text](FIGs/fig16.jpg)
 hermit-notebook.site
 
 -----
@@ -309,7 +309,7 @@ In contrast, online-learning works with diverse observation over time:
 - its big challenge is due to bad data which gradually deteriorates the #performance of the system
 Examples: interactive ranking system, real-time video processing
 
-![alt text](FIGs/fig14.jpeg)
+![alt text](FIGs/fig14.jpg)
 dziganto.github.io, dxbrx.top
 
 -----
@@ -321,7 +321,7 @@ Applying a #machinelearning #algorithm, there are some important aspects that mu
 Beginners usually focus on easier algorithms to obtain quick results and more experienced developers first focus on accuracy. Having modest algorithm for beginners should be considered as the first step and may require more sophisticated models towards understanding the data along with the highest achievable accuracy. Having said that, this is not the end of the story and still there is a need for exact tuning and efficient training to provide best possible #performance.
 
 
-![alt text](FIGs/fig15.jpeg)
+![alt text](FIGs/fig15.jpg)
 [Widanapathirana et al., Int. J. Computer Net. Comm. 4(3):37-56, 2012]
 
 ----
@@ -353,7 +353,7 @@ Geometric Deep Learning for Drug Binding Structure Prediction.
 
 In this study, a new deep-learning model is introduced which along with other existing fine-tune approaches can provide fast and high quality results for drug-like molecule binding structure wrt. specific protein targets with minimum energy. This may introduce another practical deep-learning model to be used in drug discovery. 
 
-![alt text](FIGs/fig18.jpeg)
+![alt text](FIGs/fig18.jpg)
 
 ----
 ## 23. Working with categorical data
@@ -377,7 +377,7 @@ Some other encoding approaches are:
 - leave-one-out encoding
 , ....
 
-![alt text](FIGs/fig17.jpeg)
+![alt text](FIGs/fig17.jpg)
 mldoodles.com
 
 ----
@@ -392,7 +392,7 @@ Some of the prominent fine-tuning platforms are
 - MxNet,
 ....
 
-![alt text](FIGs/fig19.jpeg)
+![alt text](FIGs/fig19.jpg)
 [Vogao et al., Sensors 21(9):2989, 2021]
 
 ----
@@ -412,14 +412,14 @@ Some useful approaches for cross-validation analysis are:
 
 6. Leave-P-out cross validation (exhaustive cross validation): leaves p data points (p out of n, for a varying p) out of training set and thus training the model via n-p samples and validate using p data points. Repeating this for all possible combinations and estimating error as average over all trials. Usually, Leave one-out cross validation is used for efficiency and to avoid resource overhead, It is as an improvement to the previous method. 
 
-![alt text](FIGs/fig20.jpeg)
+![alt text](FIGs/fig20.jpg)
 [Dankers et al., Prediction Modeling Methodology, 2018]
 
 It is always challenging in a #machinelearning (#ml) system to split samples to training and test (validation) sets, particularly when dealing with #hyperparameter tuning, in which we may need a test set to select the optimized hyperparameters. Large training set (thus small test set) tends to an imperfect testing on new candidates. Small training test (thus large test set) can also suggest an imprecise evaluation and bias results towards a specific subset of samples.
 
 To overcome this issue, one method is to define a validation set (also called development set or #devset) on training set and apply #crossvalidation. More precisely, considering a series of evaluations, in each evaluation a small portion of samples are considered as dev. set within training data. Once all evaluations are completed, we may calculate the average evaluation to measure the performance of the model. Then we test the model against unseen samples. 
 
-![alt text](FIGs/fig25.jpeg)
+![alt text](FIGs/fig25.jpg)
 Kupssinskü et al., Sensors 20:2125, 2020
 
 ----
@@ -431,7 +431,7 @@ Some important types of #neuralnetworks (#nn) that generate most pretarined mode
 
 3. Recurrent Neural Networks (#rnn): contains a recurrent connection (looping constraint) on the hidden layers so that all sequential information (e.g. categorical data) present in the input data are captured. Usually used for sequence data.
 
-![alt text](FIGs/fig21.jpeg)
+![alt text](FIGs/fig21.jpg)
 ashutoshtripathi.com
 
 #recurrentNeuralnetwork (#rnn) deals with sequence data present in the input data (e.g. dependencies among #categoricaldata) to provide predictions. RNN also contributes with parameter-sharing mechanism (sharing parameters for diverse time steps) which in turn, tends to less time consumption and fewer parameters during training. RNN, like many other #neuralnetworks, suffers from #vanishing/ #exploding #gradients for larger number of time steps. RNN is usually used for text, audio or time series data.
@@ -479,7 +479,7 @@ Positive Predictive Value(PVV), Null Error Rate, F Score (F1 score), Roc Curve, 
 
 One important type of entropy is #crossentropy in which cumulative entropy of all distribution in data, in comparison to entropy in KL, for instance, that measures differences between two distributions. Cross-entropy can be well correlated with #logisticregression (cross entropy loss, also called log loss), #softmax (categorical cross entropy loss) and #neuralnetworls (in both binomial and multinomial classifications), to moderate the vanishing gradient problem.
 
-![alt text](FIGs/fig23.jpeg)
+![alt text](FIGs/fig23.jpg)
 deeplearningwizard.com
 
 ----
@@ -495,7 +495,7 @@ Some applications of Few-shot learning are:
 , ....
 
 
-![alt text](FIGs/fig26.jpeg)
+![alt text](FIGs/fig26.jpg)
 [Wang et al., ACM Comput. Surv. 1(1), 2020]
 
 ----
@@ -517,7 +517,7 @@ After applying a multi-label classifiers, then we need to evaluate it which basi
 - Subset accuracy (exact match in a portion of samples)
 ....
 
-![alt text](FIGs/fig27.jpeg)
+![alt text](FIGs/fig27.jpg)
 sigport.org/documents/real-time-multi-label-classification-system-short-videos
 
 ----
@@ -528,7 +528,7 @@ sigport.org/documents/real-time-multi-label-classification-system-short-videos
 
 There exists a variety of Neural Generative Models, one important and applicable example is the Generative Adversarial Network (GAN) which is an unsupervised machine learning system to automatically learn and capture patterns/rules/mechanisms and so on from training input for the purpose of generating/constructing new acceptable instances from the input data.
 
-![alt text](FIGs/fig29.jpeg)
+![alt text](FIGs/fig29.jpg)
 [Park et al. Electronics 10:1216, 2021]
 
 
