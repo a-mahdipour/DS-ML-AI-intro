@@ -13,7 +13,7 @@ www.guru99.com
 
 ----
 ## 2. DS/ML are multi-disciplinary
-![alt text](FIGs/fig2.jpeg)
+![alt text](./FIGs/fig2.jpeg)
 
 www.quora.com
 
