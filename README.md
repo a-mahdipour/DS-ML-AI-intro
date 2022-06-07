@@ -13,7 +13,7 @@ www.guru99.com
 
 ----
 ## 2. DS/ML are multi-disciplinary
-![alt text](./FIGs/fig2.jpeg)
+![alt text](FIGs/fig2.jpg)
 
 www.quora.com
 
@@ -36,7 +36,7 @@ Pay attention to the Model you are using, e.g. carefully observe weights for reg
 ## 6. Start with simple models
 Avoid to start with a complex machine learning models and try simple baseline models first. To improve your model to a more complex one, examine the contribution and necessity of each part of the complex model and exclude the redundant parts.
 
-![alt text](FIGs/fig3.jpeg)
+![alt text](FIGs/fig3.jpg)
 
 stats.stackexchange.com
 
