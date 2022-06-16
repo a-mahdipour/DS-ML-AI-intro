@@ -531,7 +531,15 @@ There exists a variety of Neural Generative Models, one important and applicable
 ![alt text](FIGs/fig29.jpg)
 [Park et al. Electronics 10:1216, 2021]
 
+___
+## 31. Mislabeled taining data
+what if there exist mislabeled data (label noise) within the training set in a supervised ML system? This can occur as a result of recording misinformation and/or wrong estimation/detection, .... in labeling data. Depending on the context, we may are not simply allowed to ignore/exclude such outliers. In general if the label noise is not structured (repeated due to data leakage, misapplication or misinformation) it may not affect the ML system much.
 
 
+On the other hand , how mislabeled data can be identified and flagged across a data set? A common method is to apply classification filters, similar to cross validation, by dissecting the training set into major and minor sets and training the classifier on the major data set first and then apply it on the minor set to detect the potential noise in it. These techniques are normally intensive and need lots of effort to deal with mislabeled data.
+
+
+![alt text](FIGs/fig31.jpg)
+[imerit.net/blog/how-noisy-labels-impact-machine-learning-models/]
 
 
