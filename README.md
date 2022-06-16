@@ -1,7 +1,7 @@
-# Notes on Machine-Learning (ML), Artificial Intelegence (AI) and Data Science (DS)
+# Notes on Machine-Learning (ML), Artificial Intelegence (AI)
 
 
-## *Some important topics, challenges, techniques, improvemnents on ML and AI systems and therei correlations with DS are represented in bellow.*
+## *Some important topics, challenges, techniques, improvemnents on ML and AI systems and therei correlations with data science are represented in bellow.*
 
 -----
 
