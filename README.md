@@ -543,3 +543,24 @@ On the other hand , how mislabeled data can be identified and flagged across a d
 [imerit.net/blog/how-noisy-labels-impact-machine-learning-models/]
 
 
+----
+## 32.  Unsupervised Deep Learning MEthods
+
+Previously, we talked about supervised #deeplearning (#dl) techniques, such as ANN, RNN and CNN. Now, we consider the unsupervised DL models. Some are listed in bellow:
+1- Boltzmann Machines
+2- SOMs or self-organizing maps
+3- Auto-encoders
+
+
+Boltzmann machines as an unsupervised #neuralnetworks (#nn) that consists of fully connected nodes (neurons) that are stochastically on (visible nodes) or off (hidden nodes) according to a stochastic/generative DL model. Boltzmann machines are generally simple models that provide interesting features of input data. 
+
+
+Some instances of Boltzmann machines are : 
+- Restricted Boltzmann Machines (RBMs): hidden nodes are not  connected while visible ones are all connected,
+- Deep Belief Networks (DBNs): a deep NN based on several RBMs on the top of each other (stacking RBMs) via directed maps,
+- Deep Boltzmann Machines (DBMs): similar to DBNs with undirected connections.
+
+
+![alt text](FIGs/fig32.jpg)
+[medium.com]
+
