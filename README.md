@@ -539,7 +539,7 @@ what if there exist mislabeled data (label noise) within the training set in a s
 On the other hand , how mislabeled data can be identified and flagged across a data set? A common method is to apply classification filters, similar to cross validation, by dissecting the training set into major and minor sets and training the classifier on the major data set first and then apply it on the minor set to detect the potential noise in it. These techniques are normally intensive and need lots of effort to deal with mislabeled data.
 
 
-![alt text](FIGs/Fig31.jpg)
+![alt text](FIGs/Fig31.png)
 [imerit.net/blog/how-noisy-labels-impact-machine-learning-models/]
 
 
@@ -561,6 +561,6 @@ Some instances of Boltzmann machines are :
 - Deep Boltzmann Machines (DBMs): similar to DBNs with undirected connections.
 
 
-![alt text](FIGs/Fig32.jpg)
+![alt text](FIGs/Fig32.png)
 [medium.com]
 
