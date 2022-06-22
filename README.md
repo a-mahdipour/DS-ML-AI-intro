@@ -552,7 +552,7 @@ Previously, we talked about supervised #deeplearning (#dl) techniques, such as A
 3- Auto-encoders
 
 
-Boltzmann machines as an unsupervised #neuralnetworks (#nn) that consists of fully connected nodes (neurons) that are stochastically on (visible nodes) or off (hidden nodes) according to a stochastic/generative DL model. Boltzmann machines are generally simple models that provide interesting features of input data. 
+Boltzmann machines as an unsupervised NN that consists of fully connected nodes (neurons) that are stochastically on (visible nodes) or off (hidden nodes) according to a stochastic/generative DL model. Boltzmann machines are generally simple models that provide interesting features of input data. 
 
 
 Some instances of Boltzmann machines are : 
@@ -563,4 +563,33 @@ Some instances of Boltzmann machines are :
 
 ![alt text](FIGs/fig32.png)
 [medium.com]
+
+Autoencoder neural networks are basically used for unlabeled data 
+
+to learn a lower-dimensional representation of the input data (encoding) capturing the most important attributes of the data (representation learning) and for generative models that provide new data from the original input data. Autoencoders can be also used for dimensional reduction purposes. Each autoencoder comprises of three crucial parts: 
+
+(1) Encoder: train-validate-test set -> encoded representation
+
+(2) Bottleneck: encoded representation (the compressed representation of the original data)
+
+(3) Decoder: encoded represenation -> decompressed representation to be validated against the ground truth
+
+
+Some types of autoencoder are:
+
+- Undercomplete autoencoder: describes the updated attributes of the input dataset
+
+- Denoising autoencoders: overcomes the problem of risking of the system to learn Identity function/null function in those NN that have more hidden nodes than input nodes by randomly vanishing some the input values 
+
+- Sparse autoencoder: provides specific attribites from the input dataset
+
+- Contractive autoencoder: provides similar learned encoding for similar inputs.
+
+
+Autoencoders  can be used for Anomaly detection, Information retrieval, Image in-painting, data denoising (e.g  images, audio) and so on.
+
+
+![alt text](FIGs/fig33.png)
+[v7labs.com]
+
 
