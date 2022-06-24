@@ -595,6 +595,7 @@ Autoencoders  can be used for Anomaly detection, Information retrieval, Image in
 
 Another type of unsupervised AL approaches is self-organizing maps (SOMs), also called Kohonen map, which are basically dimensionality reduction maps on training data space. SOMs are, in fact, a type of artificial neural networks (ANNs) that can learn from competitive learning and can provide usefulreduction of data. However, SOMs are generative models and thus do not provide any information about the converted data. They are also relatively slow and do not work well with categorical data.
 
+The below figure represents the training process being implemented based on SOM on a 2D input data.
 
 ![alt text](FIGs/fig34.gif)
 [en.wikipedia.org/]
