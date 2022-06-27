@@ -5,7 +5,7 @@
 
 -----
 
-## 1. Data Science vs. Machine Learning 
+## 1. Data Science (DS) vs. Machine Learning (ML)
 
 ![alt text](fig1.jpeg)
  
@@ -73,8 +73,8 @@ Some techniques for cleaning datasets are:
 - Impute missing values
 - Flag missing values
 
-#sparsity is due to the majority of zero values associated to features
-(almost all elements are zeros). Sparse data sets cause #overfitting and sub-optimal results in #machinelearning models. Moreover, sparsity can increase time complexity of data operations. To solve this problem in machine learning, one may try different representation of sparse data using alternative data structures such a way that only non-zero values be stored for later-on action.
+Sparsity is due to the majority of zero values associated to features
+(almost all elements are zeros). Sparse data sets cause #overfitting and sub-optimal results in ML models. Moreover, sparsity can increase time complexity of data operations. To solve this problem in machine learning, one may try different representation of sparse data using alternative data structures such a way that only non-zero values be stored for later-on action.
 
 To this end, some techniques for reducing the effect of sparse data are:
 - compressing sparse row (CSR): efficient access supproting matrix multiplication
@@ -83,15 +83,15 @@ To this end, some techniques for reducing the effect of sparse data are:
 - using list of lists: rows are stored in a list with sub-lists of column indexes and array values
 - using coordinate List: list of tuples containing row and column indexes as well as the array values
 
-Other than #sparsity issue in #machinelearning (#ml) in real-world applications, datasets often include #missingdata. For instance, deep-sequencing technologies are not perfect enough to profile all genetic transcription data which generates missing data. Many ML systems are not designed to support missing values and therefore, we need to handle this issue at data-preparation level.
+Other than sparsity issue in ML in real-world applications, datasets often include missing data. For instance, deep-sequencing technologies are not perfect enough to profile all genetic transcription data which generates missing data. Many ML systems are not designed to support missing values and therefore, we need to handle this issue at data-preparation level.
 
 Some approaches to handle missing data are:
 
-- #deletion: the simplest way of handling missing data but can increase #bias in #trainingdata. Two types of deletion are
-1. #listwise (complete-case) analysis: removes all data for a case that has one or more missing values.
-2. #pairwise deletion (available-case analysis): excludes values only when there is a certain data point needed to test if the value assumed to be missing, is actually missing. Thus it can be a source for non-positive definite matrices in multivariate analyses.
+- deletion: the simplest way of handling missing data but can increase bias in training data. Two types of deletion are
+1. list-wise (complete-case) analysis: removes all data for a case that has one or more missing values.
+2. pair-wise deletion (available-case analysis): excludes values only when there is a certain data point needed to test if the value assumed to be missing, is actually missing. Thus it can be a source for non-positive definite matrices in multivariate analyses.
 
-- #imputation: replaces missing data by predicted values (non-missing data is usually used for this purpose). Some imputation other those approaches are:
+- imputation: replaces missing data by predicted values (non-missing data is usually used for this purpose). Some imputation other those approaches are:
 1. Simple imputation (missing data is calculated by different tools: mode, mean, median of the non-missing data)
 2. Regression imputation
 3. Hot-deck imputation (matching with non-missing values and key variables of non-missing values)
@@ -100,20 +100,20 @@ convergence)
 5. Multiple imputation (results of first imputed data sets are combined for the final imputation result)
 6. Imputation methods inspired by machine learning: KNN, SVM, Decision tree, Clustering, ....
 
-Another concern within data-preparation in #machinelearning (#ml) and #datascience (#ds) is due to #outliers. Outliers can be considered as those data points that are very different than the rest of data. To have a better training in a ML system and to reduce #bias in training data, outliers are usually excluded. Not all outliers are supposed to be removed as they may contain worthwhile information to be kept and introduce a new angle to be considered later on.
+Another concern within data-preparation in ML and DS is due to #outliers. Outliers can be considered as those data points that are very different than the rest of data. To have a better training in a ML system and to reduce bias in training data, outliers are usually excluded. Not all outliers are supposed to be removed as they may contain worthwhile information to be kept and introduce a new angle to be considered later on.
 
-For instance data points way different than other values may drastically affect the result of #featurescaling or #linearregression which are applied on all observations. However, it may not influence #decisiontree which is independently associated with each observation.
+For instance data points way different than other values may drastically affect the result of feature scaling or #linearregression which are applied on all observations. However, it may not influence decisiontree which is independently associated with each observation.
 
 Depending on the context of the problem as well as the model being applied, outlier-removal (also called #anomalydetection) process can be perform differently. Simple methods remove outliers using standard deviation, interquartile, MAD or so to eliminate rows of outliers containing outliers. More advance techniques impute/replace outliers to delineate their impact.
 
-Within data preparation stage for #machinelearning (#ml), not only we take care of #sparsity, #missingvalues or #outliers, but we may need to be careful about
-- #lowvariance data(redundant samples) and
-- #duplicates (redundant features)
+Within data preparation stage for #machinelearning (ML), not only we take care of #sparsity, missing values or #outliers, but we may need to be careful about
+- low variance data(redundant samples) and
+- duplicates (redundant features)
 within the data set. Except needed, these subset of data should be filtered out during #datacleaning (#datacleansing).
 
-Low-variation occurs when a column of data contains only a few unique values. Such column will not add any benefits to the #learningprocess, and require more time and #storagespace during #training; thus, can be eliminated.
+Low-variation occurs when a column of data contains only a few unique values. Such column will not add any benefits to the learning process, and require more time and storage space during training; thus, can be eliminated.
 
-Duplicates usually occur within rows of the data which have no learning benefits but require extra storage space and tend to #precessing #overhead. Duplicates are supposed to eliminated before training the ML model.
+Duplicates usually occur within rows of the data which have no learning benefits but require extra storage space and tend to precessing overhead. Duplicates are supposed to eliminated before training the ML model.
 
 
 ----
@@ -129,7 +129,7 @@ learnopencv.com
 
 ----
 ## 11. Web services for ML models
-Among a varity of existing cloud computing platforms (web services) to perform #machinelearning and #artificialintelligence algorithms; the most popular ones are:
+Among a varity of existing cloud computing platforms (web services) to perform ML and AI algorithms; the most popular ones are:
 - Amazon Web Services,
 - Microsoft Azure,
 - Google Cloud, and
@@ -140,23 +140,23 @@ dailyhostnews.com
 
 ----
 ## 12. Big data
-The field #bigdata study is a field of efficiently dealing with a large amount of data (may grow over time) that cannot be processed via traditional #dataprocessing techniques/softwares. Note that the higher observation in data, the more #accuracy and false discovery rate (#fdr) can be acheived using big data sets. #bigdata is at the intersection of #machinelearning, #artificialintelligence and #datascience and plays a crucial role. some associations between #bigdata and #machinelearning are presented in the enclosed fig. 
+The field big data study is a field of efficiently dealing with a large amount of data (may grow over time) that cannot be processed via traditional #dataprocessing techniques/softwares. Note that the higher observation in data, the more #accuracy and false discovery rate (FDR) can be acheived using big data sets. Big data is at the intersection of ML, AI and DS and plays a crucial role. some associations between big data and #machinelearning are presented in the enclosed fig. 
 
 ![alt text](FIGs/fig8.jpg)
 techtarget.com
 
 ----
 ## 13. Defining a ML model
-How to define a model for ML. A #machinelearning model comprises of mathematical configuration based on observed data so be able to predict new data at certain accuracy level (been previously estimated). Here are the steps towards generating a model in #machinelearning:
+How to define a model for ML. A ML model comprises of mathematical configuration based on observed data so be able to predict new data at certain accuracy level (been previously estimated). Here are the steps towards generating a model in ML:
 
 - Data exploration and QC
 - Pre-processing the data
-- Assign #training and test subsets of the data
-- Provide a #classification model
-- Generate a #pipeline of all the above steps
+- Assign training and test subsets of the data
+- Provide a classification model
+- Generate a pipeline of all the above steps
 - Train the model using training data
-- Run #predictions
-- Validate #performance of the model
+- Run predictions
+- Validate performance of the model
 
 ![alt text](FIGs/fig9.gif)
 developer.ibm.com, integritytrade.tk
@@ -195,17 +195,17 @@ than 1200 sources)
 - Data.gov (261,073 sets of the US open government data)
 
 
-One important step towards applying #machinelearning (#ml) system is transfering data. This is usually done through automated ML pipelines. Such pipelines suggest efficient techniques to automatically transform (or diverse transform) datasets. #sklearn and #sklearn #pandas are some well-known libraries for implementation and/or performing ML pilelines.
+One important step towards applying machinelearning (#ml) system is transfering data. This is usually done through automated ML pipelines. Such pipelines suggest efficient techniques to automatically transform (or diverse transform) datasets. sklearn and sklearn pandas are some well-known libraries for implementation and/or performing ML pilelines.
 
 
 ----
 ## 14. ML system's performance
-To examine machine learning model’s performance, we may validate the model based on its prediction as well as generalization on an independent test data. More precisely, the goal in ML model is to minimize the #error of #testdata. Error on the test data which is the sum of norm on actual output and predicted output.
+To examine machine learning model’s performance, we may validate the model based on its prediction as well as generalization on an independent test data. More precisely, the goal in ML model is to minimize the error of test data. Error on the test data which is the sum of norm on actual output and predicted output.
 
 Error = reducible error (i.e. bias^2+variance) + irreducible error (from unknown variables affecting the output variables)
 
-Irreducible generalization error in #machinelearning comprises of two important factors:
-1) bias - is because of wrong assumptions (e.g. linear while is quadratic) and due to far differences between predicted and actual data. High bias is most likely associated with #underfitting the  training data.
+Irreducible generalization error in ML comprises of two important factors:
+1) bias - is because of wrong assumptions (e.g. linear while is quadratic) and due to far differences between predicted and actual data. High bias is most likely associated with underfitting the  training data.
 2) variance - is, however, correlated to high sensitivity of the ML model to small changes in the  training data. More precisely, when the model is well stablished on trained data while but not on test/validation datasets. Variance represents the level of dispersion on predicted from actual values in a dataset. High variance associates with overfitting and modeling random noise in the training data.
 
 ![alt text](FIGs/fig10.jpg)
@@ -213,14 +213,14 @@ statlearning.com
 
 ----
 ## 15. Principal component analysis (PCA)
-One of the most important steps in #unsupervised #machinelearning algorithms is principal component analysis #pca. Usually pca is used for:
-- reducing dimensions in #trainingdata
-- #visualization of high-dimensional data
+One of the most important steps in unsupervised ML algorithms is principal component analysis PCA. Usually pca is used for:
+- reducing dimensions in training data
+- visualization of high-dimensional data
 - de-noising data sets
 - data compression unifying similar features
 - data clarification of convoluted data, ...
 
-#pca usually takes the following steps:
+PCA usually takes the following steps:
 - normalizing the data distribution using z-score (to have mean equal to 0 and variance to 1)
 - simply using the matrix of features or computation of the covariance/correlation matrix of features
 - finding the eigenvectors and eigenvalues from the latter matrix to identify principal components
@@ -232,7 +232,7 @@ One of the most important steps in #unsupervised #machinelearning algorithms is 
 towardsdatascience.com
 
 Working with high-dimensional (multivariate) data tends to overfit in #machinelearning #ml models and thus dimensionality reduction approaches are implemented to modify data prior to modelling.
-Principal component analysis #pca is one of the popular dimensionality reduction techniques which is an unsupervised learning method that clusters data based on a set of orthogonal components that suggest maximum variances across all other components.
+Principal component analysis PCA is one of the popular dimensionality reduction techniques which is an unsupervised learning method that clusters data based on a set of orthogonal components that suggest maximum variances across all other components.
 
 some specific types of PCA are:
 - Sparse PCA (limiting input variables applying sparsity constraints)
@@ -245,15 +245,15 @@ some specific types of PCA are:
 ![alt text](FIGs/fig24.jpg)
 ----
 ## 16. Ensemble learning
-#ensemble learning is a #supervisedlearning technique which combines/optimizes and #trains multiple (weaker) learning methods to solve more complex problems at higher #accuracy level for the purpose of #prediction and/or #classification and to improve the generalization errors.
+Ensemble learning is a supervised learning technique which combines/optimizes and trains multiple (weaker) learning methods to solve more complex problems at higher accuracy level for the purpose of prediction and/or classification and to improve the generalization errors.
 
-#metalearning usually is referred to an #ensemble learning algorithm that can combine the predictions of other #machinelearning algorithms and thus learn from those learning algorithms. Meta-learning is sometimes associated with multiple inter-connected prediction models in which the algorithm learns how to learn (namely #multitasklearning). In a meta-learning system, algorithm, classifier, regression and model are resp. called #metaalgorithm (learner), #metaclassifier, #metaregression and #metamodel.
+Meta learning usually is referred to an ensemble learning algorithm that can combine the predictions of other ML algorithms and thus learn from those learning algorithms. Meta-learning is sometimes associated with multiple inter-connected prediction models in which the algorithm learns how to learn (namely multi-task learning). In a meta-learning system, algorithm, classifier, regression and model are resp. called meta-algorithm (learner), meta-classifier, meta-regression and meta-model.
 
 Some of the meta-algorithms used in ensemble methods are:
-- #bagging (Bootstrap Aggregation): learns homogeneous weak learners independently and combines the results as a deterministic average. Bagging is usually used to reduce #overfitting and #variance problems.
-- #boosting: learns homogeneous weak learners sequentially and combines the results through diverse deterministic strategies. This weighted average meta-learning approach is used for reducing #bias and variance.
-- #stacking (stacked generalization): learns heterogeneous weak learners independently and combines the results via a meta-model which predicts based on the weaker models' predictions using the predictions from previous steps as its inputs.
-- #blending: very similar to stacking meta-model but instead of out-of-fold predictions as is used in stacking, uses a #validation set to train the next layer.
+- bagging (Bootstrap Aggregation): learns homogeneous weak learners independently and combines the results as a deterministic average. Bagging is usually used to reduce overfitting and variance problems.
+- boosting: learns homogeneous weak learners sequentially and combines the results through diverse deterministic strategies. This weighted average meta-learning approach is used for reducing bias and variance.
+- stacking (stacked generalization): learns heterogeneous weak learners independently and combines the results via a meta-model which predicts based on the weaker models' predictions using the predictions from previous steps as input.
+- blending: very similar to stacking meta-model but instead of out-of-fold predictions as is used in stacking, uses a validation set to train the next layer.
 
 ![alt text](FIGs/fig12.jpg)
 towardsdatascience.com, medium.com
@@ -261,7 +261,7 @@ towardsdatascience.com, medium.com
 ----
 ## 17. Semisupervised machine learning
 Semisupervised machine learning algorithm is a hybrid version of supervised and unsupervised learning techniques.
-In general, #machinelearning algorithms learn from data and it is not necessarily labeled (as in #supervisedlearning). Labeled data usually helps to minimize the difference between #prediction and label for higher #accuracy. However, #unsupervisedlearning learns to provide trends and/or patterns or classify for an unlabeled dataset. Semi-supervised learning uses a labeled data (minor amount) as well as a unlabeled data (major amount) to train a model. Note that #reinforcementlearning  is not a semisupervised learning.
+In general, ML algorithms learn from data and it is not necessarily labeled (as in supervised learning). Labeled data usually helps to minimize the difference between prediction and label for higher accuracy. However, unsupervised learning learns to provide trends and/or patterns or classify for an unlabeled dataset. Semi-supervised learning uses a labeled data (minor amount) as well as a unlabeled data (major amount) to train a model. Note that reinforcement learning is not a semisupervised learning.
 
 The main steps of semisupervised algorithm are:
 1- train the algorithm via supervised learning on labeled training data
@@ -276,37 +276,37 @@ litslink.com
 
 -----
 ## 18. Instant-based/model- based MLs
-Alternative to the previous classifications, #machinelearning #algorithms, based on how to be generalized, can be divided into two main approaches:
-1- #instancebased (#memorybased or #nonparametric) #learning: is trained based on (a subset of) #trainingdata and then is generalized to test data using a #similarity #measure to the training data. This approach dose not make explicit generalization but only compares to instances already seen during training.
-2- #modelbased (#parametric) learning: is a designed model on training data which can make #prediction on the test data. Majority of machine learning systems are of this type and used to make predictions on input data.
+Alternative to the previous classifications, ML algorithms, based on how to be generalized, can be divided into two main approaches:
+1- instancebased (memory-based or non-parametric) learning: is trained based on (a subset of) trainingdata and then is generalized to test data using a similarity measure to the training data. This approach dose not make explicit generalization but only compares to instances already seen during training.
+2- model-based (parametric) learning: is a designed model on training data which can make prediction on the test data. Majority of machine learning systems are of this type and used to make predictions on input data.
 
 ![alt text](FIGs/fig16.jpg)
 hermit-notebook.site
 
 -----
 ## 19. Offline/online MLs
-In a general perspective, #machinelearning algorithm can be divided into two approaches:
-1- #batchlearning also called #offlinelearning (data in rest)
-2- #onlinelearning (data in motion)
+In a general perspective, machinelearning algorithm can be divided into two approaches:
+1- batchlearning also called offline learning (data in rest)
+2- onlinelearning (data in motion)
 
 Batch-learning algorithms require all data at one time-step:
 - generally is time consuming and takes lots of computing resources
 - must be trains using all available data
-- using batch #gradientdescent along with #svm , #logesticregression, #decisiontree , ...
+- using batch gradient descent along with svm , logesticregression, decision tree , ...
 - no incremental updates, but to update a batch-learning-system all training needs to be repeated from the scratch
 - most likely needs hight memory and processing overhead
-- can be #unsupervised, #semisupervised and #supervisedlearning .
-Examples: processing jobs in a company, classifying images in #imageprocessing.
+- can be unsupervised, semisupervised and #supervisedlearning .
+Examples: processing jobs in a company, classifying images in image processing.
 
 In contrast, online-learning works with diverse observation over time:
 - works bests in a system that continuously receives data with a need for adaptability and/or rapid changes
 - its model can be updated upon new data arrival
 - is data storage efficient and provides a limited observation window
-- using #stochastic #gradientdescent with #perceptron style algorithms
-- is beneficial for incremental updates or #outofcore learning in which data volume is huge and more than machine's main memory
-- all ML approaches -unsupervised, semisupervised, supervised and #reinforcementlearning - can be used
+- using stochastic gradientdescent with perceptron style algorithms
+- is beneficial for incremental updates or outofcore learning in which data volume is huge and more than machine's main memory
+- all ML approaches -unsupervised, semisupervised, supervised and reinforcement learning - can be used
 - low memory and less processing overhead is required
-- its big challenge is due to bad data which gradually deteriorates the #performance of the system
+- its big challenge is due to bad data which gradually deteriorates the performance of the system
 Examples: interactive ranking system, real-time video processing
 
 ![alt text](FIGs/fig14.jpg)
@@ -314,11 +314,11 @@ dziganto.github.io, dxbrx.top
 
 -----
 ## 20. Important aspects in runing ML
-Applying a #machinelearning #algorithm, there are some important aspects that must be simultaneously taken into account:
-- #accuracy of the model
-- #flexibility of the model and ease-of-use
-- #trainingtime and #classification efficiency
-Beginners usually focus on easier algorithms to obtain quick results and more experienced developers first focus on accuracy. Having modest algorithm for beginners should be considered as the first step and may require more sophisticated models towards understanding the data along with the highest achievable accuracy. Having said that, this is not the end of the story and still there is a need for exact tuning and efficient training to provide best possible #performance.
+Applying a ML algorithm, there are some important aspects that must be simultaneously taken into account:
+- accuracy of the model
+- flexibility of the model and ease-of-use
+- trainingtime and classification efficiency
+Beginners usually focus on easier algorithms to obtain quick results and more experienced developers first focus on accuracy. Having modest algorithm for beginners should be considered as the first step and may require more sophisticated models towards understanding the data along with the highest achievable accuracy. Having said that, this is not the end of the story and still there is a need for exact tuning and efficient training to provide best possible performance.
 
 
 ![alt text](FIGs/fig15.jpg)
@@ -326,28 +326,27 @@ Beginners usually focus on easier algorithms to obtain quick results and more ex
 
 ----
 ## 21. Data pre-processing
-#featureengineering is one of the important steps in #datapreparation of #machinelearning in which applying mathematical techniques, one transforms original, external or #unstructureddata to a meaningful format of data containing interpretable features for #ml models.
+Feature engineering is one of the important steps in data preparation of ML in which applying mathematical techniques, one transforms original, external or #unstructureddata to a meaningful format of data containing interpretable features for #ml models.
 
-ML algorithms usually handle many #features. It can often be a useful strategy to add more and more features to improve #accuracy of the ML model as provides a better training for the ML model. However this can affect the #performance of #predictions on test data (#overfitting). Therefor, one should perform feature-engineering to increase the accuracy of the ML model at #training time and to avoid overfitting of unseen data. 
+ML algorithms usually handle many #features. It can often be a useful strategy to add more and more features to improve #accuracy of the ML model as provides a better training for the ML model. However this can affect the performance of predictions on test data (overfitting). Therefor, one should perform feature-engineering to increase the accuracy of the ML model at training time and to avoid overfitting of unseen data. 
 
 ----
 ## 22. Deep learning (DL)
-#deeplearning (#dl) is a subset of #machinelearning but how do they differ?
-Deep learning is basically an artificial #neuralnetwork (#ann or #nn) with #representation (#feature) learning having more than two layers of NNs with the goal of simulating the #humanbrain behavior. Even though a single-layer NN can provide approximate predictions, DL with more hidden layers can improve #accuracy. DL supports diverse #artificialintelligence (#ai) applications (from credit card fraud detection to auto-pilot system in cars).
+Deep learning is a subset of #machinelearning but how do they differ? Deep learning is basically an artificial NN (ANN) with representation (feature) learning having more than two layers of NNs with the goal of simulating the human brain behavior. Even though a single-layer NN can provide approximate predictions, DL with more hidden layers can improve accuracy. DL supports diverse AI applications (from credit card fraud detection to auto-pilot system in cars).
 
 Generally speaking, DL can be dissected into three categories:
-- Deep networks for #unsupervisedlearning (#generative learning),
-- Deep networks for #supervisedlearning (#discriminative learning),
+- Deep networks for unsupervised learning (generative learning),
+- Deep networks for supervised learning (discriminative learning),
 - Hybrid deep networks using the latter techniques.
 
 Here are some differences between DL and ML:
 1- ML requires more human interventions than DL (DL is more complex at set up level)
 2- DL is more complex at set up level and needs much more powerful resources/hardwares (#parallelcomputing and using #gpus can help)
-3- ML algorithms require less time for #setup/ #operation in comparison with DL's, but power of results is tremendously improved in DL feeding more input data
-4- ML models are applied on #structureddata and employ traditional #algorithms while DL works on large amount of #unstructureddata using NNs.
-5- DL is used for more advanced/complex/autonomous applications such as in #roboticsurgery while ML is usually for more ordinary applications such as in #onlinebanking.
+3- ML algorithms require less time for setup/operation in comparison with DL's, but power of results is tremendously improved in DL feeding more input data
+4- ML models are applied on #structureddata and employ traditional #algorithms while DL works on large amount of unstructured data using NNs.
+5- DL is used for more advanced/complex/autonomous applications such as in #roboticsurgery while ML is usually for more ordinary applications such as in online banking.
 
-Another application of #deeplearning in #drugdiscovery:
+Another application of DL in drug discovery:
 Geometric Deep Learning for Drug Binding Structure Prediction.
 [Sta ̈rk et al., arXiv:2202.05146v1, 2022]
 
@@ -357,11 +356,11 @@ In this study, a new deep-learning model is introduced which along with other ex
 
 ----
 ## 23. Working with categorical data
-#categoricaldata is another concept that we should e careful about while #preprocessing data. Categorical data is a group of information that share similar characteristics and can be in form of groups/classes or text (as apposed to numerical data). For instance, a group of medical samples which can be categorized based on their gender, age, disease-stage or so.
+Categorical data is another concept that we should e careful about while preprocessing data. Categorical data is a group of information that share similar characteristics and can be in form of groups/classes or text (as apposed to numerical data). For instance, a group of medical samples which can be categorized based on their gender, age, disease-stage or so.
 
-Categorical data are required to be encoded for #machinelearning #algorithms as most existing models cannot handle categorical datasets. Therefore, it seems critical to convert such groups/classes into numerical values in an efficient way in terms of algorithm's performance.
+Categorical data are required to be encoded for ML algorithms as most existing models cannot handle categorical datasets. Therefore, it seems critical to convert such groups/classes into numerical values in an efficient way in terms of algorithm's performance.
 
-Generally speaking, encoding techniques can be dissected into two major parts: (1) #nominal (without particular order) or (2) #ordinal (with particular order).
+Generally speaking, encoding techniques can be dissected into two major parts: (1) nominal (without particular order) or (2) ordinal (with particular order).
 
 A common approach to encode categorical data is
 - #onehotencoding: encloses extra columns of data, one for each unique group/class within the categorical data column. For instance we may assign value 1 to that specific group/class and value 0 for other observations.
@@ -382,7 +381,7 @@ mldoodles.com
 
 ----
 ## 24. Fine-tunning
-#deeplearning, in fact, is resource-intensive as requires lots of data to analyze and then learn from. #finetuning in deep learning associates with those small adjustments that can improve its results and performance. Fine-tuning usually implements weights of a previous deep learning algorithm to program a new similar deep learning model which is now more time-efficient.
+Deep learning, in fact, is resource-intensive as requires lots of data to analyze and then learn from. Fine-tuning in deep learning associates with those small adjustments that can improve its results and performance. Fine-tuning usually implements weights of a previous deep learning algorithm to program a new similar deep learning model which is now more time-efficient.
 
 Some of the prominent fine-tuning platforms are
 - TensorFlow ,
@@ -397,7 +396,7 @@ Some of the prominent fine-tuning platforms are
 
 ----
 ## 25. Cross validation
-#crossvalidation in #machinelearning is a mean to validate stability of machine learning systems (i.e. low on both #bias and #variance).
+Cross-validation in #machinelearning is a mean to validate stability of machine learning systems (i.e. low on both #bias and #variance).
 
 Some useful approaches for cross-validation analysis are:
 1. Validation (evaluation of residuals): estimates training error, not dealing with the test error and thus model can still be underfit or overfit.
@@ -415,32 +414,32 @@ Some useful approaches for cross-validation analysis are:
 ![alt text](FIGs/fig20.jpg)
 [Dankers et al., Prediction Modeling Methodology, 2018]
 
-It is always challenging in a #machinelearning (#ml) system to split samples to training and test (validation) sets, particularly when dealing with #hyperparameter tuning, in which we may need a test set to select the optimized hyperparameters. Large training set (thus small test set) tends to an imperfect testing on new candidates. Small training test (thus large test set) can also suggest an imprecise evaluation and bias results towards a specific subset of samples.
+It is always challenging in a ML system to split samples to training and test (validation) sets, particularly when dealing with hyperparameter tuning, in which we may need a test set to select the optimized hyperparameters. Large training set (thus small test set) tends to an imperfect testing on new candidates. Small training test (thus large test set) can also suggest an imprecise evaluation and bias results towards a specific subset of samples.
 
-To overcome this issue, one method is to define a validation set (also called development set or #devset) on training set and apply #crossvalidation. More precisely, considering a series of evaluations, in each evaluation a small portion of samples are considered as dev. set within training data. Once all evaluations are completed, we may calculate the average evaluation to measure the performance of the model. Then we test the model against unseen samples. 
+To overcome this issue, one method is to define a validation set (also called development set or #devset) on training set and apply cross-validation. More precisely, considering a series of evaluations, in each evaluation a small portion of samples are considered as dev. set within training data. Once all evaluations are completed, we may calculate the average evaluation to measure the performance of the model. Then we test the model against unseen samples. 
 
 ![alt text](FIGs/fig25.jpg)
 Kupssinskü et al., Sensors 20:2125, 2020
 
 ----
-## 26. Neural networks (NNs)
-Some important types of #neuralnetworks (#nn) that generate most pretarined models in #deeplearning (#dl) are:
-1. Artificial Neural Networks (#ann): also referred to as Feed-Forward NN or Multi-Layer perceptron MLP (#mlp), is a group of multiple perceptrons (neurons) at each NN-layer comprises of input, hidden and output layers. Usually used for tabular data.
+## 26. Neural networks (NN)
+Some important types of NN that generate most pretarined models in DL are:
+1. Artificial Neural Networks (ANN): also referred to as Feed-Forward NN or Multi-Layer perceptron MLP (NLP), is a group of multiple perceptrons (neurons) at each NN-layer comprises of input, hidden and output layers. Usually used for tabular data.
 
-2. Convolution Neural Networks (#cnn): automatically learns the implemented filters to extract required/relevant features from input data. CNN is used for image/video sequential data.
+2. Convolution Neural Networks (CNN): automatically learns the implemented filters to extract required/relevant features from input data. CNN is used for image/video sequential data.
 
-3. Recurrent Neural Networks (#rnn): contains a recurrent connection (looping constraint) on the hidden layers so that all sequential information (e.g. categorical data) present in the input data are captured. Usually used for sequence data.
+3. Recurrent Neural Networks (RNN): contains a recurrent connection (looping constraint) on the hidden layers so that all sequential information (e.g. categorical data) present in the input data are captured. Usually used for sequence data.
 
 ![alt text](FIGs/fig21.jpg)
 ashutoshtripathi.com
 
-#recurrentNeuralnetwork (#rnn) deals with sequence data present in the input data (e.g. dependencies among #categoricaldata) to provide predictions. RNN also contributes with parameter-sharing mechanism (sharing parameters for diverse time steps) which in turn, tends to less time consumption and fewer parameters during training. RNN, like many other #neuralnetworks, suffers from #vanishing/ #exploding #gradients for larger number of time steps. RNN is usually used for text, audio or time series data.
+Recurrent Neural Network (RNN) deals with sequence data present in the input data (e.g. dependencies among categorica ldata) to provide predictions. RNN also contributes with parameter-sharing mechanism (sharing parameters for diverse time steps) which in turn, tends to less time consumption and fewer parameters during training. RNN, like many other #neuralnetworks, suffers from vanishing/exploding gradients for larger number of time steps. RNN is usually used for text, audio or time series data.
 
 ![alt text](FIGs/fig22.gif)
 towardsdatascience.com
 
-As we previously mentioned, #convolutionalneuralnetworks (#cnn) is an important type of #neuralnetworks (#nn) with many applications in
-- natural language processing (#nlp)
+As we previously mentioned, Convolutional Neural Networks (CNN) is an important type of NN with many applications in
+- natural language processing (NLP)
 - image processing/classification/segmentation
 - video processing
 - speech recognition
@@ -458,7 +457,7 @@ frl.nyu.edu
 
 -----
 ## 27. Confusion matrix
-One of the effective techniques to evaluate a classifier's performance in #machinelearning (#ml) is to investigate the #confusionmatrix. A confusion matrix, in fact, is a summary of prediction results on a classification problem. For instance, counting the number of class X instances are classified with class Y.
+One of the effective techniques to evaluate a classifier's performance in ML is to investigate the #confusionmatrix. A confusion matrix, in fact, is a summary of prediction results on a classification problem. For instance, counting the number of class X instances are classified with class Y.
 
 In general, a confusion matrix can be calculated through following steps:
 1. generate a proper test/validation data
@@ -475,16 +474,16 @@ Positive Predictive Value(PVV), Null Error Rate, F Score (F1 score), Roc Curve, 
 
 ----
 ## 28. Entropy
-#entropy is a general term for chaos (unpredictable or disorder) measurement in a system, which in our case is #machinelearning (#ml). It can be almost observed every where in ML/AI models as a crucial metric for classifiers to either optimize the method (such as in decision tree and Bayesian learning) or to estimate its performance as a loss function (e.g. Kullback–Leibler (KL)). Thus, less entropy is associated with better performance or classifications.
+Entropy is a general term for chaos (unpredictable or disorder) measurement in a system, which in our case is ML. It can be almost observed every where in ML/AI models as a crucial metric for classifiers to either optimize the method (such as in decision tree and Bayesian learning) or to estimate its performance as a loss function (e.g. Kullback–Leibler (KL)). Thus, less entropy is associated with better performance or classifications.
 
-One important type of entropy is #crossentropy in which cumulative entropy of all distribution in data, in comparison to entropy in KL, for instance, that measures differences between two distributions. Cross-entropy can be well correlated with #logisticregression (cross entropy loss, also called log loss), #softmax (categorical cross entropy loss) and #neuralnetworls (in both binomial and multinomial classifications), to moderate the vanishing gradient problem.
+One important type of entropy is `cross-entropy' in which cumulative entropy of all distribution in data, in comparison to entropy in KL, for instance, that measures differences between two distributions. Cross-entropy can be well correlated with logistic regression (cross entropy loss, also called log loss), softmax (categorical cross entropy loss) and NN (in both binomial and multinomial classifications), to moderate the vanishing gradient problem.
 
 ![alt text](FIGs/fig23.jpg)
 deeplearningwizard.com
 
 ----
 ## 29. Few shot learning
-Let us assume we tend to design a #machinelearning (#ml) program that can somehow think like a human who has not seen a bear before, but has seen dogs and based on background information can recognize similarities between the bear and a dog. To design such an algorithm we are dealing with #fewshot #learning (the latter example associates with a zero-shot learning). Few-shot learning utilized a limited amount of data to classify/predict and can be applied when there is a shortage in data. Note that tis approach cannot be used for super complicated problems.
+Let us assume we tend to design a ML program that can somehow think like a human who has not seen a bear before, but has seen dogs and based on background information can recognize similarities between the bear and a dog. To design such an algorithm we are dealing with #fewshot #learning (the latter example associates with a zero-shot learning). Few-shot learning utilized a limited amount of data to classify/predict and can be applied when there is a shortage in data. Note that tis approach cannot be used for super complicated problems.
 
 Some applications of Few-shot learning are:
 1- Healthcare: Covid-19 detection, Few-shot drug discovery, disease image detection, ...
@@ -500,7 +499,7 @@ Some applications of Few-shot learning are:
 
 ----
 ## 29. Multi-class, multi-label and multi-ouput ML systems
-To classify instances in a #machinelearning (#ml) system that may belong to several classed of data in which multiple binary outputs (belong to or not belong to each) occurs, we are dealing with multi-label (or merely multi-output) classifiers. Multi-label classification is a generalization of multi-class classification in which each instance can have a unique label.
+To classify instances in a ML system that may belong to several classed of data in which multiple binary outputs (belong to or not belong to each) occurs, we are dealing with multi-label (or merely multi-output) classifiers. Multi-label classification is a generalization of multi-class classification in which each instance can have a unique label.
 
 There are some classifiers that support such classifications:
 1. k-Nearest Neighbour classifier (KNN)
@@ -522,7 +521,7 @@ sigport.org/documents/real-time-multi-label-classification-system-short-videos
 
 ----
 ## 30. Generative Adversarial Network (GAN)
-#machinelearning techniques that perform statistical classifications can be generally divided into the following categories:
+ML techniques that perform statistical classifications can be generally divided into the following categories:
 1- Generative classifiers (applying joint probability distribution observable and target variable variables): Naive Bayes classifier, Gaussian Mixture Model, Linear Discriminant Analysis, Hidden Markov Model,...
 2- Discriminative classifiers (using conditional probability of the target data providing an observed data): Logistic Regression, KNN, SVM, Decision Tree, Random Forest, ...
 
@@ -533,10 +532,10 @@ There exists a variety of Neural Generative Models, one important and applicable
 
 ___
 ## 31. Mislabeled taining data
-what if there exist mislabeled data (label noise) within the training set in a supervised ML system? This can occur as a result of recording misinformation and/or wrong estimation/detection, .... in labeling data. Depending on the context, we may are not simply allowed to ignore/exclude such outliers. In general if the label noise is not structured (repeated due to data leakage, misapplication or misinformation) it may not affect the ML system much.
+what if there exist mislabeled data (label noise) within the training set in a supervised ML system? This can occur as a result of recording misinformation and/or wrong estimation/detection, ... in labeling data. Depending on the context, we may are not simply allowed to ignore/exclude such outliers. In general if the label noise is not structured (repeated due to data leakage, misapplication or misinformation) it may not affect the ML system much.
 
 
-On the other hand , how mislabeled data can be identified and flagged across a data set? A common method is to apply classification filters, similar to cross validation, by dissecting the training set into major and minor sets and training the classifier on the major data set first and then apply it on the minor set to detect the potential noise in it. These techniques are normally intensive and need lots of effort to deal with mislabeled data.
+On the other hand, how mislabeled data can be identified and flagged across a data set? A common method is to apply classification filters, similar to cross validation, by dissecting the training set into major and minor sets and training the classifier on the major data set first and then apply it on the minor set to detect the potential noise in it. These techniques are normally intensive and need lots of effort to deal with mislabeled data.
 
 
 ![alt text](FIGs/fig31.png)
@@ -546,14 +545,12 @@ On the other hand , how mislabeled data can be identified and flagged across a d
 ----
 ## 32.  Unsupervised Deep Learning MEthods
 
-Previously, we talked about supervised #deeplearning (#dl) techniques, such as ANN, RNN and CNN. Now, we consider the unsupervised DL models. Some are listed in bellow:
+Previously, we talked about supervised DL techniques, such as ANN, RNN and CNN. Now, we consider the unsupervised DL models. Some are listed in bellow:
 1- Boltzmann Machines
 2- SOMs or self-organizing maps
 3- Auto-encoders
 
-
 Boltzmann machines as an unsupervised NN that consists of fully connected nodes (neurons) that are stochastically on (visible nodes) or off (hidden nodes) according to a stochastic/generative DL model. Boltzmann machines are generally simple models that provide interesting features of input data. 
-
 
 Some instances of Boltzmann machines are : 
 - Restricted Boltzmann Machines (RBMs): hidden nodes are not  connected while visible ones are all connected,
@@ -564,9 +561,9 @@ Some instances of Boltzmann machines are :
 ![alt text](FIGs/fig32.png)
 [medium.com]
 
-Autoencoder neural networks are basically used for unlabeled data 
 
-to learn a lower-dimensional representation of the input data (encoding) capturing the most important attributes of the data (representation learning) and for generative models that provide new data from the original input data. Autoencoders can be also used for dimensional reduction purposes. Each autoencoder comprises of three crucial parts: 
+
+Autoencoder neural networks are basically used for unlabeled data to learn a lower-dimensional representation of the input data (encoding) capturing the most important attributes of the data (representation learning) and for generative models that provide new data from the original input data. Autoencoders can be also used for dimensional reduction purposes. Each autoencoder comprises of three crucial parts: 
 
 (1) Encoder: train-validate-test set -> encoded representation
 
@@ -579,7 +576,7 @@ Some types of autoencoder are:
 
 - Undercomplete autoencoder: describes the updated attributes of the input dataset
 
-- Denoising autoencoders: overcomes the problem of risking of the system to learn Identity function/null function in those NN that have more hidden nodes than input nodes by randomly vanishing some the input values 
+- Denoising autoencoders: overcomes the problem of risking of the system to learn identity function/null function in those NN that have more hidden nodes than input nodes by randomly vanishing some the input values 
 
 - Sparse autoencoder: provides specific attribites from the input dataset
 
@@ -593,7 +590,7 @@ Autoencoders  can be used for Anomaly detection, Information retrieval, Image in
 [v7labs.com]
 
 
-Another type of unsupervised AL approaches is self-organizing maps (SOMs), also called Kohonen map, which are basically dimensionality reduction maps on training data space. SOMs are, in fact, a type of artificial neural networks (ANNs) that can learn from competitive learning and can provide usefulreduction of data. However, SOMs are generative models and thus do not provide any information about the converted data. They are also relatively slow and do not work well with categorical data.
+Another type of unsupervised ML approaches is self-organizing maps (SOMs), also called Kohonen map, which are basically dimensionality reduction maps on training data space. SOMs are, in fact, a type of artificial neural networks (ANNs) that can learn from competitive learning and can provide usefulreduction of data. However, SOMs are generative models and thus do not provide any information about the converted data. They are also relatively slow and do not work well with categorical data.
 
 The below figure represents the training process being implemented based on SOM on a 2D input data.
 
