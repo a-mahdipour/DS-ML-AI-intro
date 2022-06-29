@@ -243,6 +243,7 @@ some specific types of PCA are:
 - Non-negative matrix factorization (NMF 0r NNMF which decomposes data into factorize it into two matrices of non-negative elements)
 
 ![alt text](FIGs/fig24.jpg)
+medium.com
 ----
 ## 16. Ensemble learning
 Ensemble learning is a supervised learning technique which combines/optimizes and trains multiple (weaker) learning methods to solve more complex problems at higher accuracy level for the purpose of prediction and/or classification and to improve the generalization errors.
