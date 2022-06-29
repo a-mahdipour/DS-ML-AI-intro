@@ -258,6 +258,12 @@ Some of the meta-algorithms used in ensemble methods are:
 ![alt text](FIGs/fig12.jpg)
 towardsdatascience.com, medium.com
 
+
+Therefore, ensemble Learning, which takes advantage of utilizing the predictions provided by a set of weaker learners to generate a strong prediction, is developed to represent a better performance providing there exists enough, independent and/or diverse weak learners. Moreover, ensemble methods tend to deteriorate errors through bagging/pasting, boosting and stacking algorithms. Bagging is primarily useful to reduce variance error. Boosting is deployed to reduce bias error in the system. Stacking can reduce either bias or variance depending on the combining models that are employed in the meta-learner (blender).
+
+![alt text](FIGs/fig35.png)
+[Terko et al. XXVII Int. Conf.Information,ICAT, 2019]
+
 ----
 ## 17. Semisupervised machine learning
 Semisupervised machine learning algorithm is a hybrid version of supervised and unsupervised learning techniques.
