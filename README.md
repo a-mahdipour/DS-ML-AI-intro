@@ -29,7 +29,7 @@ Be careful about Data Leakage ignorance (e.g. a part of information is not consi
 Make sure you are avoiding overfitting by development in your Test-Set. For an appropriate ML usage, you must have enough data for multiple tests and to apply blind sets for later-on evaluation. Never use test sets for several times which may tend to overfitting. Try to apply the newest hyper-parameter optimization techniques.
 
 ----
-## 5. 
+## 5. Model selection
 Pay attention to the Model you are using, e.g. carefully observe weights for regression analysis, splits for decision tree, feature visualization, activation atlas and grand tour for neural networks. Could be insightful if you apply appropriate visualization techniques on your data. Also apply diverse AI tools. Evaluate your model for different metrics and unusual inputs and carefully interrogate outputs.
 
 ----
@@ -41,7 +41,7 @@ Avoid to start with a complex machine learning models and try simple baseline mo
 stats.stackexchange.com
 
 ----
-## 7.
+## 7.Study dataset first
 Be careful about the case study you are applying ML on. Before applying ML techniques makes sure if this is an appropriate tool by estimating cost, benefits, min viability of product, project risk, data privacy/bias/transparency and accuracy of AI and ML infused applications. In some case ML may only help to categorize across possible options but may need to be interpreted along with other perspectives and background info to be insightful.
 
 ![alt text](FIGs/fig4.jpg)
@@ -114,6 +114,27 @@ within the data set. Except needed, these subset of data should be filtered out 
 Low-variation occurs when a column of data contains only a few unique values. Such column will not add any benefits to the learning process, and require more time and storage space during training; thus, can be eliminated.
 
 Duplicates usually occur within rows of the data which have no learning benefits but require extra storage space and tend to precessing overhead. Duplicates are supposed to eliminated before training the ML model.
+
+## Mislabeled data
+Working with ML classifiers, one important challenge that one may face, is associated with mislabeled data -also referred to as label-noise data. Regardless of the reason of its occurrence, we need to address this issue that is widespread and as can dramatically affect the performance of ML systems.
+
+Let's assume that a unique label is assigned to each instance in the input data. There are, at least but not last, some approaches to address this issue:
+
+1- Using noise-robust ML systems:
+On may simply apply those algorithms that are robust wrt. label-
+noise. For instance applying bagging ensemble methods or those
+algorithms such as SVM with insensitive (robust) loss function
+against label-noise data. Notice that mislabeled data can tend to
+overfitting, thus designing a stronger regularization technique can
+reduce the impact of label-noise.
+
+2- Cleaning the data:
+A usual method is to try a set of classifiers on training data and calculating their accuracy on test samples to estimate the percentage of failed classifiers against a certain accuracy threshold. This way one can find the probability that an input data contains mislabeled samples. This technique can be resource-expensive for big data and will not annotate mislabeled samples.
+A better technique is to use KNN for each sample and estimate the confidence score of each sample to its neighboring data points. Then one approach is to filter the mislabeled samples which is not suggested for high-level noise contents and when the data set is small. Thus the general technique is to correct labels based semi-supervised learning techniques.
+
+![alt text](FIGs/fig35.jpg)
+discourse.bokeh.org
+
 
 
 ----
