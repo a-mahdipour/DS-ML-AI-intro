@@ -115,6 +115,23 @@ Low-variation occurs when a column of data contains only a few unique values. Su
 
 Duplicates usually occur within rows of the data which have no learning benefits but require extra storage space and tend to precessing overhead. Duplicates are supposed to eliminated before training the ML model.
 
+## Missing data
+One important step in data wrangling within implementation of a #machinelearning (#ml) or generally in #artificialintelligence (#ai) nmethod is how to deal with missing data. We pointed out this before, but now lest try to be more focused on it. This step is crucial as many ML/AI techniques do not support datasets containing missing data.
+
+To solve this issue, the following methods can be applied:
+1- Stick to those ML algorithm that support missing data, such as random forest,
+2- Simply delete features/instances associated with the missing data
+3- Replace them by imputing mode/median/mean and so on,
+4- Replace them by some unique values,
+5- Applying imputation techniques which can predict the missing value based on similar input data to predict the missing data.
+
+Among all these approaches, the exclusion method remains the best as it will not artificially impose unwanted bias/variance changes to the system.
+
+![alt text](FIGs/fig36.gif)
+pholder.com
+
+
+
 ## Mislabeled data
 Working with ML classifiers, one important challenge that one may face, is associated with mislabeled data -also referred to as label-noise data. Regardless of the reason of its occurrence, we need to address this issue that is widespread and as can dramatically affect the performance of ML systems.
 
@@ -132,7 +149,7 @@ reduce the impact of label-noise.
 A usual method is to try a set of classifiers on training data and calculating their accuracy on test samples to estimate the percentage of failed classifiers against a certain accuracy threshold. This way one can find the probability that an input data contains mislabeled samples. This technique can be resource-expensive for big data and will not annotate mislabeled samples.
 A better technique is to use KNN for each sample and estimate the confidence score of each sample to its neighboring data points. Then one approach is to filter the mislabeled samples which is not suggested for high-level noise contents and when the data set is small. Thus the general technique is to correct labels based semi-supervised learning techniques.
 
-![alt text](FIGs/fig35.jpg)
+![alt text](FIGs/fig35.gif)
 discourse.bokeh.org
 
 
